@@ -1,0 +1,170 @@
+:root {
+    --primary-color: #17a2b8;
+    --dark-color: #343a40;
+    --danger-color: #dc3545;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #7d9794;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.x-large {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.large {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: #ee4548;
+}
+
+.p {
+    padding: 0.5rem;
+}
+.p-1 {
+    padding: 1rem;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--light-color);
+    color: #333;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: opacity 0.2s ease-in;
+    outline: none;
+}
+
+.btn-primary,
+.bg-primary {
+    background: #7d9794;
+    color: #fff;
+}
+
+.btn-dark {
+    background: var(--dark-color);
+    color: #fff;
+    border-radius: 15%;
+}
+
+.btn-danger,
+.bg-danger {
+    background: var(--danger-color);
+    color: #fff;
+}
+
+.bg-white {
+    background: #fff;
+    color: #333;
+    border: #ccc solid 1px;
+    width: 50%;
+}
+
+.form .form-group {
+    margin: 1.2rem 0;
+}
+
+.form .form-text {
+    display: block;
+    margin-top: 0.3rem;
+    color: #888;
+}
+
+.form input[type='text'],
+.form textarea {
+    display: block;
+    width: 50%;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+}
+
+.form input[type='submit'],
+button {
+    font: inherit;
+}
+
+.post-title {
+  width: 50%;
+}
+
+@media (max-width: 700px) {
+    .container {
+        margin-top: 8rem;
+    }
+
+    .hide-sm {
+        display: none;
+    }
+
+    .x-large {
+        font-size: 3rem;
+    }
+
+    .large {
+        font-size: 2rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .btn-danger {
+      width: 105px;
+      margin-top: 10px;
+    }
+
+    .bg-white {
+      width: 70%;
+    }
+}
